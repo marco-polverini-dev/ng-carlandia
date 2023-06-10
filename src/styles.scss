@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons";
+
+html, body {
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+i.bi {
+    font-size: 1.25rem;
+}
