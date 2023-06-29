@@ -1,26 +1,3 @@
-<nav class="navbar navbar-expand bg-primary">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#"
-        ><i class="text-white bi bi-instagram"></i
-      ></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"><i class="text-white bi bi-facebook"></i></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"><i class="text-white bi bi-whatsapp"></i></a>
-    </li>
-  </ul>
-  <ul class="navbar-nav ms-auto">
-    <li class="nav-item">
-      <a class="nav-link text-white" href="#">Lingua</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white" href="#">Tema</a>
-    </li>
-  </ul>
-</nav>
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="">
@@ -45,6 +22,14 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Customer Care</a>
+      </li>
+      <li class="nav-item dropdown">
+        <app-locale-selector></app-locale-selector>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link"
+          ><app-theme-selector></app-theme-selector
+        ></a>
       </li>
     </ul>
   </div>

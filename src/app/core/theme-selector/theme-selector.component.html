@@ -1,0 +1,23 @@
+<!-- <button
+  type="button"
+  aria-label="cambia da giorno a notte"
+  class="btn btn-link me-2"
+  (click)="toggleTheme()"
+>
+  <i
+    class="bi"
+    [ngClass]="{
+      'bi-moon-stars text-success': theme() === 'light',
+      'bi-sun text-secondary': theme() === 'dark'
+    }"
+  ></i>
+</button> -->
+<div class="form-check form-switch">
+  <input
+    (change)="toggleTheme()"
+    class="form-check-input"
+    type="checkbox"
+    role="switch"
+    id="flexSwitchCheckDefault"
+  />
+</div>

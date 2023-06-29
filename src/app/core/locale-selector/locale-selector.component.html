@@ -1,0 +1,43 @@
+<!-- <div class="dropdown me-2">
+  <a
+    class="btn dropdown-toggle"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    <span class="d-inline d-md-none icon">{{
+      this.currentLocale()?.icon
+    }}</span>
+    <span class="d-none d-md-inline">{{ this.currentLocale()?.desc }}</span>
+  </a>
+
+  <ul class="dropdown-menu">
+    <li *ngFor="let locale of LOCALES">
+      <a class="dropdown-item pointer" (click)="setLocale(locale.id)"
+        ><span class="d-inline d-md-none icon">{{ locale.icon }}&nbsp;</span
+        >{{ locale.desc }}</a
+      >
+    </li>
+  </ul>
+</div> -->
+
+<a
+  class="nav-link dropdown-toggle"
+  role="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+>
+  <span class="d-inline d-md-none icon">{{ this.currentLocale()?.icon }}</span>
+  <span class="d-none d-md-inline">{{ this.currentLocale()?.desc }}</span>
+</a>
+<ul class="dropdown-menu">
+  <li *ngFor="let locale of LOCALES">
+    <a
+      class="dropdown-item pointer"
+      [ngClass]="{ active: locale.desc === this.currentLocale()?.desc }"
+      (click)="setLocale(locale.id)"
+      ><span class="d-inline d-md-none icon">{{ locale.icon }}&nbsp;</span
+      >{{ locale.desc }}</a
+    >
+  </li>
+</ul>
